@@ -11,7 +11,6 @@ document
             reader.onload = function (event) {
               const data = event.target.result;
               const parsedData = parseGpx(data);
-              debugger;
               traces.push({
                 x: parsedData.distances,
                 y: parsedData.elevations,
