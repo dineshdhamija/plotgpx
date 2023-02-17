@@ -72,6 +72,11 @@ document
           xaxis: {
             title: "Distance (miles)",
           },
+          legend: {
+            x: 1,
+            xanchor: 'right',
+            y: 1
+          },
           yaxis: {
             title: "Elevation (feet)",
           },
