@@ -73,9 +73,7 @@ document
             title: "Distance (miles)",
           },
           legend: {
-            x: 1,
-            xanchor: 'right',
-            y: 1
+            "orientation": "h",
           },
           yaxis: {
             title: "Elevation (feet)",
