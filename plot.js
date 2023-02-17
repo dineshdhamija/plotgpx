@@ -77,7 +77,7 @@ document
 
           },
           yaxis: {
-            title: "Elevation (feet)",
+            title: "Elevation Gain (feet)",
           },
         };
 
