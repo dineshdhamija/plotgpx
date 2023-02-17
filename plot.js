@@ -73,6 +73,8 @@ document
           },
           legend: {
             "orientation": "h",
+            y: -0.3,
+
           },
           yaxis: {
             title: "Elevation (feet)",
