@@ -85,9 +85,11 @@ document
       }
 
       // Helper function to calculate distance between two lat/lon points
+      // To calculate the distance between two latitude-longitude points 
+      // on the Earth's surface, you can use the Haversine formula. 
       function getDistanceFromLatLonInMiles(lat1, lon1, lat2, lon2) {
         const deg2rad = (deg) => deg * (Math.PI / 180);
-        const R = 6371; // Radius of the earth in km
+        const R = 3956; // Radius of the earth in miles
         const kmInMile = 1.60934;
         const dLat = deg2rad(lat2 - lat1);
         const dLon = deg2rad(lon2 - lon1);
@@ -98,6 +100,5 @@ document
             Math.sin(dLon / 2) *
             Math.sin(dLon / 2);
         const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-        const d = R * c; // Distance in meters
-        return d / kmInMile;
+        return R * c; // Distance in miles
       }
